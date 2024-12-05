@@ -6,82 +6,254 @@
         <meta name="description" content="Pirmas Laboratorinis su HTML">
         <meta name="author" content="Gustas Tolvaisas">
         <meta name="keywords" content="HTML, CSS">
-        <link rel="stylessheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Mano Pirmas Resume</title>
     </head>
-    <body>
-    <section> 
-      <h1> Apie </h1>
-        <p><i>Esu antrakursis universitete Vilnius Tech. Tikiuosi ateityje dirbti su aukštos įtampos linijomis energetikos srityje.</i></p>
-        <h2>Studentas Vilnius Tech</h2>
-        <img src="images/ryan gosling.jfif">
-        <p>Studijuoju Vilnius Tech elektros energetikos inžinerijos bakalaurą</p>
-        <ul>
-            <li><b>Birthday:</b> 15 Lapkričio 1999</li>
-            <li><b>Website:</b> <a href="http://www.ITLaboratorinis.com">www.ITLaboratorinis.com</a></li>
-            <li><b>Phone:</b> iPhone 13</li>
-            <li><b>City:</b> England</li>
-            <li><b>Age:</b> Virš 12</li>
-            <li><b>Degree:</b> Nėra (bet bus)</li>
-            <li><b>Email:</b> <a href="mailto:VardenisPavardenis@gmail.com">VardenisPavardenis@gmail.com</a></li>
-            <li><b>Freelance:</b> Nežinau :)</li>
-        </ul>        
-        <p>Dirbu sunkiai ir atidžiai. Visada stengiuosi pasiekti aukščiausių rezultatų. Kruopščiai darau tai, ko prašo</p>
-        <p><b>250 </b>Patenkintų klientų skaičius</p>
-        <p><b>300 mln.  </b>Projektų</p>
-        <p><b>1463 </b> Valandų atkalta su projektais</p>
-        <p><b>1 </b>Sunkus darbuotojas</p>
-    </section> 
 
-    <section> 
-      <h1> Resume </h1>
-        <p>Esu atlikęs daug nuostabių projektų savo gyvenime. Nežinau, kuris iš jų man labiausiai patiko. Man patinka energetika. Myliu Ignitis Group ir EpsoG. 
-         Esu lietuvos ateitis.<3</p>
-        <h2>Summary</h2>
-        <h3>GUSTAS PAVARDENIS</h3>
-        <p><i>Nuostabus ir gražus mokinys, kuris niekada neklysta ir turi virš 1 milijono portfolio projektų.</i></p>
-        <ul>
-            <li>New york, USA</li>
-            <li>(123) 603450345</li>
-            <li>vardenis@gmail.com</li>
-        </ul> 
-        <h2>Education</h2>
-        <h3>SUPER GIMNAZIJOS MOKINYS</h3>
-        <h5>2018-2022</h5>
-        <p><i>Vilniaus Salomėjos Nėries gimnazija, LTU</i></p>
-        <p>Baigiau gimnazija su labai gerais įvertinimais</p>
-        <h3>ENERGETIKOS BAKALAURAS</h3>
-        <h5>2022-dabar</h5>
-        <p><i>Vilnius Tech, LTU</i></p>
-        <p>Įgijau Bakalauro laipsnį universitete</p>
-        <h2>Professional Experience</h2>
-        <h3>SENIOR PROJECT MANAGER</h3>
-        <h5>2012-2014</h5>
-        <p><i>Litgrid, LTU</i></p>
-        <ul>
-            <li>Buvau komandos vadovas, organizavau visų komandos narių veiklas</li>
-            <li>Išsprendžiau bėdas susijusias su projektų finansavimu</li>
-            <li>Pasiekiau nuostabių rezultatų</li>
-        </ul>
-        <h3>KASININKAS</h3>
-        <h5>2014-2016</h5>
-        <p><i>Maxima, LTU</i></p>
-        <ul>
-           <li>Nuostabiai skaičiavau žmonių grąžas</li>
-           <li>Greit reagavau į sistemos sutrikimus</li>
-        </ul>
+    <body>
+
+        <button id="backToTop" class="back-to-top">↑</button>
+
+        <div class="fixed-buttons">
+            <a href="#sectionFooter" class="button-left">Home</a>
+            <a href="#sectionAbout" class="button-left">About</a>
+            <a href="#sectionResume" class="button-left">Resume</a>
+            <a href="#sectionPortfolio" class="button-left">Portfolio</a>
+            <a href="#sectionPaslaugos" class="button-left">Paslaugos</a>
+        </div>
+        
+    <section>
+        <section id="sectionFooter">
+            <footer class="footer-container">
+                <div class="footer-name">
+                    <h2>Gustas Tolvaišas</h2>
+                    <p class="footer-subtitle">Web Developer & Designer</p>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="images/Linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.Facebook.com" target="_blank">
+                        <img src="images/Facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="images/X_logo.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/Instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </section>    
+        
+
+    <section id="sectionAbout"> 
+        <h1 style="display:flex; justify-content: center; align-items: center;"> Apie </h1> 
+        <p style="display:flex; justify-content: center; align-items: center; height: 20px">Esu antrakursis universitete Vilnius Tech. Tikiuosi ateityje dirbti su aukštos įtampos linijomis energetikos srityje.</p>
+
+        <div class="center-vertical">
+            <div class="about-container">
+                <img src="images/ryan gosling.jfif" alt="Ryan Gosling photo" class="about-photo">
+                <div class="about-text">
+                    <h2>Studentas Vilnius Tech</h2>
+                    <p><i>Studijuoju Vilnius Tech elektros energetikos inžinerijos bakalaurą</i></p>
+                    <ul>
+                        <li><b>Birthday:</b> 15 Lapkričio 1999</li>
+                        <li><b>Website:</b> www.ITLaboratorinis.com</li>
+                        <li><b>Phone:</b> iPhone 13</li>
+                        <li><b>City:</b> England</li>
+                        <li><b>Age:</b> Virš 12</li>
+                        <li><b>Degree:</b> Nėra (bet bus)</li>
+                        <li><b>Email:</b> VardenisPavardenis@gmail.com</li>
+                        <li><b>Freelance:</b> Nežinau :)</li>
+                    </ul>
+                    <p>Dirbu sunkiai ir atidžiai. Visada stengiuosi pasiekti aukščiausių rezultatų. Kruopščiai darau tai, ko prašo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-2-container">
+            <div class="about-2-item">
+                <img src="images/virs_numerio.jpg">
+                <p><div class="number"><b>250 </b></div>
+                <div class="text">Patenkintų klientų skaičius</div></p>
+            </div>
+
+            <div class="about-2-item">
+                <img src="images/virs_numerio.jpg">
+                <p><div class="number"><b>300 mln.  </b></div> 
+                <div class="text">Projektų</div></p> 
+            </div>
+         
+            <div class="about-2-item">
+                <img src="images/virs_numerio.jpg">
+                <p><div class="number"><b>1463 </b></div> 
+                <div class="text">Valandų atkalta su projektais</div></p> 
+            </div>        
+            
+
+            <div class="about-2-item">
+                <img src="images/virs_numerio.jpg">
+                <p><div class="number"><b>1 </b></div> 
+                <div class="text"> Sunkus darbuotojas</div></p>
+            </div>
+        </div>        
     </section>
     
     <section>
-      <h1>Portfolio</h1>
-         <p>Čia mano portfolio.</p> 
-         <img src="images/portfolio1.jpg" height="200" width="300">
-         <img src="images/portfolio2.jpg" height="200" width="300">
-         <img src="images/portfolio3.jpg" height="200" width="300">
-      <h1>Paslaugos</h1>
-         <iframe width="300" height="300" src="https://www.youtube.com/embed/lkxk1jCF7rY" title="Ignitis Group Investor Day 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-         <audio controls>
-         <source src="horse.mp3" type="audio/mpeg">
-    </section>     
+        <h1 style="display:flex; justify-content: center; align-items: center;">Skills</h1>
+            <p style="display:flex; justify-content: center; align-items: center;">Turiu daug pageidaujamų įgūdžių.</p>
+            <div class="skills-section">
+                <div class="skills-column">
+                    <div class="skill">
+                        <span class="skill-title">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title">CSS</span>
+                        <span class="skill-percentage">85%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title">JavaScript</span>
+                        <span class="skill-percentage">75%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <div class="skill">
+                        <span class="skill-title">PHP</span>
+                        <span class="skill-percentage">70%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title">WordPress/CMS</span>
+                        <span class="skill-percentage">80%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-title">Photoshop</span>
+                        <span class="skill-percentage">65%</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="sectionResume"> 
+        <h1 style="display:flex; justify-content: center; align-items: center;"> Resume </h1>
+            <p style="display:flex; justify-content: center; align-items: center; margin-bottom: 70px;">Esu atlikęs daug nuostabių projektų savo gyvenime. Nežinau, kuris iš jų man labiausiai patiko. Man patinka energetika. Myliu Ignitis Group ir EpsoG. 
+            Esu lietuvos ateitis.</p>
+        
+    <div class="resume-container">
+        <div class="left-section">      
+        <h2>Summary</h2>
+            <h3>GUSTAS PAVARDENIS</h3>
+                <p><i>Nuostabus ir gražus mokinys, kuris niekada neklysta ir turi virš 1 milijono portfolio projektų.</i></p>
+                <ul>
+                <li>New york, USA</li>
+                <li>(123) 603450345</li>
+                <li>vardenis@gmail.com</li>
+                </ul> 
+        <h2>Education</h2>
+            <h3>SUPER GIMNAZIJOS MOKINYS</h3>
+                <h4>2018-2022</h4>
+                    <p><i>Vilniaus Salomėjos Nėries gimnazija, LTU</i></p>
+                    <p>Baigiau gimnazija su labai gerais įvertinimais</p>
+            <h3>ENERGETIKOS BAKALAURAS</h3>
+                <h4>2022-dabar</h4>
+                    <p><i>Vilnius Tech, LTU</i></p>
+                    <p>Įgijau Bakalauro laipsnį universitete</p>
+        </div>
+        
+        <div class="right-section">
+        <h2>Professional Experience</h2>
+            <h3>SENIOR PROJECT MANAGER</h3>
+                <h4>2012-2014</h4>
+                    <p><i>Litgrid, LTU</i></p>
+                    <ul>
+                    <li>Buvau komandos vadovas, organizavau visų komandos narių veiklas</li>
+                    <li>Išsprendžiau bėdas susijusias su projektų finansavimu</li>
+                    <li>Pasiekiau nuostabių rezultatų</li>
+        </ul>
+            <h3>KASININKAS</h3>
+                <h4>2014-2016</h4>
+                    <p><i>Maxima, LTU</i></p>
+                    <ul>
+                    <li>Nuostabiai skaičiavau žmonių grąžas</li>
+                    <li>Greit reagavau į sistemos sutrikimus</li>
+                    </ul>
+        </div>
+    </div>                
+    </section>
+    
+    <section id="sectionPortfolio">
+      <h1 style="display:flex; justify-content: center; align-items: center;">Portfolio</h1>
+        <p style="display:flex; justify-content: center; align-items: center;">Čia mano portfolio.</p>
+
+        <div class="portfolio-container">
+        <img src="images/portfolio1.jpg" height="500" width="500">
+        <img src="images/portfolio2.jpg" height="400" width="300">
+        <img src="images/portfolio3.jpg" height="200" width="400">
+        </div>
+        
+      <h1 id="sectionPaslaugos" style="display:flex; justify-content: center; align-items: center;">Paslaugos</h1>
+        <div class="paslaugos-container">
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/lkxk1jCF7rY" title="Ignitis Group Investor Day 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        </div>
+    </section> 
+
+    <section>
+        <button id="toggle-dark-mode" class="button-dark">Toggle dark mode</button>
+    </section>
+
+    <section>
+        <div class="header-container">
+            <header>
+                <p style="color: rgb(70, 70, 71); font-size: 37px; font-weight: 700; margin: 20px;">Gustas Tolvaišas</p>
+                <p><i>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</i></p>
+                    <div class="icon-links">
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/X_logo.png" alt="Twitter" class="icon">
+                     </a>
+                     <a href="https://www.Facebook.com" target="_blank">
+                         <img src="images/Facebook.png" alt="Facebook" class="icon">
+                     </a>
+                      <a href="https://instagram.com" target="_blank">
+                         <img src="images/Instagram.png" alt="Instagram" class="icon">
+                     </a>
+                     <a href="https://linkedin.com" target="_blank">
+                         <img src="images/Linkedin.png" alt="Linkedin" class="icon">
+                        </a>
+                    </div>
+
+                <hr class="divider">    
+                
+                <p style="padding-top: 50px; font-size: 15px;">Copyright <b>Gustas Tolvaišas</b> All rights reserved</p>    
+            </header>
+        </div>
+    </section>
+
+        <script src="darkmode.js"></script>
+        <script src="back-to-top.js"></script>
+        
     </body>
 </html>
