@@ -27,8 +27,53 @@
         <section id="sectionFooter">
             <footer class="footer-container">
                 <div class="footer-name">
+                    <math display="block">
+                        <mrow>
+                            <mi>&#x03C3;</mi>
+                            <mo>=</mo>
+                                <msqrt>
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mi>N</mi>
+                                    </mfrac>
+                                    <munderover>
+                                        <mo>&#x2211</mo>
+                                        <mrow>
+                                            <mi>i</mi>
+                                            <mo>=</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                        <mi>N</mi>
+                                    </munderover> 
+                                    <msup>
+                                        <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                          <mi>x</mi>
+                                          <mi>i</mi>
+                                          </msub>
+                                          <mo>-</mo>
+                                          <mi>&#x03BC;</mi>
+                                          <mo>)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                      </msup>   
+                                </msqrt>
+                        </mrow>
+                    </math>
+                    <div id="clock" style="font-size: 48px"></div>
                     <h2>Gustas Tolvaišas</h2>
                     <p class="footer-subtitle">Web Developer & Designer</p>
+                    <svg height="130" width="500">
+                        <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                        </linearGradient>
+                        </defs>
+                        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                        </svg>
                 </div>
                 <div class="footer-icons">
                     <a href="https://www.linkedin.com" target="_blank">
@@ -254,6 +299,6 @@
 
         <script src="darkmode.js"></script>
         <script src="back-to-top.js"></script>
-        
+        <script src="clock.js"></script>
     </body>
 </html>
