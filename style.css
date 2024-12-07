@@ -351,12 +351,12 @@ body.dark-mode {
 /* dark mode button */
 
 .button-dark {
-    margin-left: auto; /* Remove fixed margin */
-    margin-right: auto; /* Center the button horizontally */
-    position: relative; /* Use relative positioning */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
     cursor: pointer; 
     padding: 20px 10px; 
-    display: block; /* Ensures it behaves predictably */
+    display: block; 
 }
 
 .button-dark:hover{
@@ -369,11 +369,11 @@ body.dark-mode {
 
 @media screen and (max-width: 600px) {
     .button-dark {
-        top: auto; /* Reset top for mobile */
-        left: auto; /* Reset left for mobile */
+        top: auto; 
+        left: auto; 
         padding: 8px 15px; 
         font-size: 14px; 
-        margin: 10px auto; /* Center horizontally */
+        margin: 10px auto; 
     }
 }
 
