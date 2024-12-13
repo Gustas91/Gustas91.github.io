@@ -351,12 +351,12 @@ body.dark-mode {
 /* dark mode button */
 
 .button-dark {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative; 
+    margin-left: auto; /* Remove fixed margin */
+    margin-right: auto; /* Center the button horizontally */
+    position: relative; /* Use relative positioning */
     cursor: pointer; 
     padding: 20px 10px; 
-    display: block; 
+    display: block; /* Ensures it behaves predictably */
 }
 
 .button-dark:hover{
@@ -369,11 +369,11 @@ body.dark-mode {
 
 @media screen and (max-width: 600px) {
     .button-dark {
-        top: auto; 
-        left: auto; 
+        top: auto; /* Reset top for mobile */
+        left: auto; /* Reset left for mobile */
         padding: 8px 15px; 
         font-size: 14px; 
-        margin: 10px auto; 
+        margin: 10px auto; /* Center horizontally */
     }
 }
 
@@ -472,6 +472,43 @@ body.dark-mode {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto; 
+}
+
+/* Forma */
+
+.form-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.form-button {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.results-container {
+    margin-top: 20px;
+}
+.result-row {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+.field-name {
+    font-weight: bold;
+}
+
+.average-row {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 /* bendras stilius */
