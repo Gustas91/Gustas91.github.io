@@ -267,6 +267,51 @@
     </section> 
 
     <section>
+        <h2 style="display:flex; align-items: center; justify-content: center;"> Contact list</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                
+                <label for="email">Gmail Address:</label>
+                <input type="email" id="email" pattern=".+@gmail\.com" required>
+                
+                <label for="phone">Telephone Number:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                
+                <label for="q1">Question 1 (1-10):</label>
+                <input type="number" id="q1" min="1" max="10" oninput="validateRange(this)" required>
+                
+                <label for="q2">Question 2 (1-10):</label>
+                <input type="number" id="q2" min="1" max="10" oninput="validateRange(this)" required>
+                
+                <label for="q3">Question 3 (1-10):</label>
+                <input type="number" id="q3" min="1" max="10" oninput="validateRange(this)" required>
+                
+                <label for="q4">Question 4 (1-10):</label>
+                <input type="number" id="q4" min="1" max="10" oninput="validateRange(this)" required>
+                
+                <label for="q5">Question 5 (1-10):</label>
+                <input type="number" id="q5" min="1" max="10" oninput="validateRange(this)" required>
+                
+                <button id="form-button" type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    
+        <div class="results-container" id="resultsContainer" style="height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        </div>
+    
+        <div class="average-container" id="averageContainer" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        </div>
+    </section>
+
+    <section>
         <button id="toggle-dark-mode" class="button-dark">Toggle dark mode</button>
     </section>
 
@@ -300,5 +345,6 @@
         <script src="darkmode.js"></script>
         <script src="back-to-top.js"></script>
         <script src="clock.js"></script>
+        <script src="form.js"></script>
     </body>
 </html>
